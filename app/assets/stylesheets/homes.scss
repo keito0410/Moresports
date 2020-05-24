@@ -1,0 +1,42 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.back{
+	background-image: url(img2.jpg);
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+}
+
+
+
+.content{
+	background-color: white;
+	width:70%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.content-image1{
+	background-image: url(img3.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.content-image2{
+	background-image: url(img4.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.content-text{
+	margin-top: 50px;
+}

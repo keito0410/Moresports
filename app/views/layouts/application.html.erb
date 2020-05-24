@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moresports</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="back">
+    <header>
+  <div class="container">
+    <dir class="row">
+  <div class="nav navbar-nav navbar-left sitename">
+    <p>Sports-Matching</p>
+  </div>
+  <ul class="nav navbar-nav navbar-right">
+         <li><%= link_to "Home", "/" %></li>
+         <li><%= link_to "About", homes_about_path %></li>
+         <li><%= link_to "コーチ", users_path %></li>
+         <li><a href="#contact">Club</a></li>
+         <li><%= link_to "ログイン", new_user_session_path %></li>
+         <li><%= link_to "コーチ登録", new_user_registration_path %></li>
+         <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        </ul>
+  </div>
+</dir>
+</div>
+</header>
+    <%= yield %>
+  </body>
+</html>
+
+
